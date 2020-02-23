@@ -85,8 +85,9 @@ with tf.Session() as sess:
 
 duration = time() - startTime
 print("Train Finished takes: ", duration)
+sess = tf.Session()
 print("Accuray: ", sess.run(accuracy,feed_dict={x:mnist.test.images, y_label:mnist.test.labels}))
-
+sess.close()
 
 
 
