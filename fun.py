@@ -23,5 +23,5 @@ with tf.Session() as sess:
     
     # 畫好步驟之後，要使用"tf.summary.FileWriter"把檔案寫到目標資料夾，
     # 第二個參數表示要把整個圖層放到graph參數內，這樣才能用tensorboard畫出來。
-    train_writer = tf.summary.FileWriter('log/area',sess.graph)
-    train_writer.close()
+train_writer = tf.summary.FileWriter('log/area',sess.graph)
+train_writer.close()
